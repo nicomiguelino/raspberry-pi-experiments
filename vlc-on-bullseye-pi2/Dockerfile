@@ -1,4 +1,4 @@
-FROM balenalib/raspberrypi3-debian:bullseye
+FROM balenalib/raspberry-pi2:bullseye
 
 RUN apt-get update && \
     apt-get -y install --no-install-recommends \
