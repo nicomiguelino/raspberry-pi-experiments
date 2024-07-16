@@ -1,0 +1,10 @@
+services:
+  viewer:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    privileged: true
+    tty: true
+    stdin_open: true
+    volumes:
+      - ./videos:/app/videos
