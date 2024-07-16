@@ -8,10 +8,15 @@ Debuan 11 and older):
 dtoverlay=vc4-fkms-v3d
 ```
 
+Generate Dockerfile.
+
+```bash
+./scripts/create_dockerfile.sh
+```
+
 Initialize the container.
 
 ```bash
-cd vlc-on-bullseye-${PLATFORM}/ # ${PLATFORM} can either be pi2, pi3, or pi4.
 docker compose down && docker compose up -d --build
 ```
 

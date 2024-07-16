@@ -1,4 +1,4 @@
-FROM balenalib/raspberrypi3-debian:bullseye
+FROM balenalib/$IMAGE_NAME:$IMAGE_TAG
 
 RUN apt-get update && \
     apt-get -y install --no-install-recommends \

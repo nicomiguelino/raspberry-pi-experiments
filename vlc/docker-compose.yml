@@ -2,7 +2,7 @@ services:
   viewer:
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: docker/Dockerfile
     privileged: true
     tty: true
     stdin_open: true
